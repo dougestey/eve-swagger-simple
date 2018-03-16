@@ -24,11 +24,8 @@ module.exports = {
                         reject(e);
                     }
 
-                    if (result.error == 'Method not allowed') {
-                        this._post(route, parameters).then(
-                            res => { resolve(res) },
-                            err => { reject(err) }
-                        );
+                    if (result && result.error) {
+                        reject(result);
                     } else {
                         resolve(result);
                     }
