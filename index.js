@@ -1,6 +1,6 @@
 var request = require('request');
 var querystring = require('querystring');
-const baseUrl = ('https://esi.tech.ccp.is/latest');
+const baseUrl = ('https://esi.evetech.net/latest');
 
 module.exports = {
 
